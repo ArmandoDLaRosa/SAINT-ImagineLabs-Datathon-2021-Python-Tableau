@@ -1,5 +1,5 @@
 
-# SAINT Imagine Labs Datathon 2021
+# SAINT-Imagine Labs Datathon 2021
 [Dataset retrieved from Kaggle](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data)
 
 ## Build AWS EC3 RDS Server
