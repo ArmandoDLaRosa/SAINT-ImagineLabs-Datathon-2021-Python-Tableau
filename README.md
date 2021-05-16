@@ -3,7 +3,7 @@
 [Dataset retrieved from Kaggle](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data)
 
 ## Build AWS EC3 RDS Server
-![Amazon](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/Screenshot_20210515-142913%20(1).png)
+![Amazon](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/tree/main/Server)
   ### Create Database
     1) Select in 'Choose a database creation method'
        Standard create
@@ -24,7 +24,7 @@
 
 
 ## EDA, Exploratory Data Analysis
-[Link to Jupyter NB PDF](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/Airbnb%20EDA.pdf)
+[Link to Jupyter NB PDF](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/Python/Airbnb%20EDA.pdf)
 
 	1) Read The Data CSV
 	2) Understand the data using head() and tail()
