@@ -80,7 +80,7 @@
 5) Then, import the data to table tableFact
 
 ## DashBoard
-[File for Tableau Dashboard](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/PerformanceMetricsNYC.twb)
+[File for Tableau Dashboard](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Dashboard/Dashboard%20-%20Performance%20Metrics%20in%20NYC.png)
 1) Identify all the objects and their function.
 2) Import the DB to Tableau
 3) Design different metrics that are relevant to the data analysis. 
@@ -90,4 +90,4 @@
 7) Add a Dashboard tab and place the different sheets that have been made.
 8) Modifications on format, colors and placement can be done.
 
-![Dashboard Tableau](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/Historia_2.png)
+![Dashboard Tableau](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Dashboard/Dashboard%20-%20Performance%20Metrics%20in%20NYC.png)
