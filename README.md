@@ -76,7 +76,7 @@
 
 2) Execute the sql script to create the tables
 3) Now, using the graphic interface of DBeaver import the .csv files
-4) Firstly, import the tables dimHost and dimHousing
+4) Firstly, import the tables dimHost and dimHousing, to have the keys needed for tableFact attributes.
 5) Then, import the data to table tableFact
 
 ## DashBoard
