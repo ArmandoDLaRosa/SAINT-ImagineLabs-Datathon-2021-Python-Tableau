@@ -3,7 +3,7 @@
 [Dataset retrieved from Kaggle](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data)
 
 ## Build AWS EC3 RDS Server
-![Amazon](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/tree/main/Server)
+![Amazon](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Server/Create%20Database.png)
   ### Create Database
     1) Select in 'Choose a database creation method'
        Standard create
@@ -29,17 +29,17 @@
 	1) Read The Data CSV
 	2) Understand the data using head() and tail()
 
-![head()](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/WhatsApp%20Image%202021-05-15%20at%2014.38.14.jpeg)
-![tail()](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/WhatsApp%20Image%202021-05-15%20at%2014.38.28.jpeg)
+![head()](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/Images/head().jpeg)
+![tail()](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/Images/tail().jpeg)
 
 	4) Check the shape of the dataset. Here we have '48895 rows' and '16 columns'
 	5) Get info about each column using  info(), we found  that '3 columns where float64',
     '7 columns where int 64', and ‘6 where object/string’.
-![df.info](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/6c76f5f4-3a39-4379-8822-b05b12815535.jpg)
+![df.info()](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/Images/info().jpg)
 	
 	5) Check the number of nulls in the table, we found out ‘last review’ had 10,005 nulls, 
     reviews_per_month also 10,005,  ‘host_name’ had 25 nulls and ‘name’ just 16.
-![Null](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/b17baaf7-e4d7-4091-a38e-6b9beb84a325.jpg)
+![Null](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/Images/nullOfDataSet.jpg)
   
 ## Star Schema DB, we named it 'airbnb_nyc'
        To make the analysis of the dataset easier, we decided to create a data warehouse (database) 
@@ -49,14 +49,14 @@
        table was the tableFact. This last table was designed with just numerical attributes and the primary 
        keys of the dimensional tables.
 
-![Star Schema DB - airbnb_nyc](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/4c7c57dc-2709-48c8-a27b-4e2001851e74.jpg)	
+![Star Schema DB - airbnb_nyc](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/StarSchema/StarSchemaDB.jpg)	
 	
 * dimhost Table
 * dimhousing Table
 * tableFact Table
 
  ### SCRIPT
-[Link to DDL  SCRIPT](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/StarSchema.txt)
+[Link to DDL  SCRIPT](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/StarSchema/StarSchema.txt)
 
  ### Local Dbeaver to MySQL
 	Fill the blanks:
@@ -65,14 +65,14 @@
 		Database: Empty
 		Username: master user created
 		Password: pass code created
-![Connect Server in DBeaver](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/unknown.png)
+![Connect Server in DBeaver](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/DBeaver/Connection%20Settings.png)
  
 ## ETL Data
 1) Using python we rearranged  the dataset’s columns into 3 new CSV, one for each new table in the database. Each table matching the attributes of the Star Schema DB model we builted
 
-* [dimhost csv](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/dimhost.csv)
-* [dimhousing csv](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/dimhousing.csv)
-* [tablefact csv](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-datathon2021/blob/main/tableFact.csv)
+* [dimhost csv](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/CSV/dimhost.csv)
+* [dimhousing csv](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/CSV/dimhousing.csv)
+* [tablefact csv](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Analysis/CSV/tableFact.csv)
 
 2) Execute the sql script to create the tables
 3) Now, using the graphic interface of DBeaver import the .csv files
