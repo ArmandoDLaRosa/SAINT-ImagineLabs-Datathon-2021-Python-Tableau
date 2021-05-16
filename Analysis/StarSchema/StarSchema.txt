@@ -1,0 +1,51 @@
+-- Datawarehouse creation
+-- Datathon SAINT x Imagine Data
+-- Esthela Cedillo, Armando Cerda, Jesus Trujillo
+-- 2021
+
+drop database if exists airbnb_NYC;
+create database airbnb_NYC;
+
+use airbnb_NYC;
+
+drop table if exists tableFact;
+drop table if exists dimHousing;
+drop table if exists dimHost;
+
+CREATE TABLE dimHost (
+id bigINT NOT NULL,
+host_id bigint NOT NULL,
+host_name VARCHAR(120),
+price bigINT,
+minimum_nights bigINT,
+number_of_reviews bigINT,
+PRIMARY KEY (id, host_id)
+);
+
+CREATE TABLE dimHousing (
+id bigINT NOT NULL,
+name VARCHAR(120) NULL,
+neighbourhood_group VARCHAR(120),	
+neighbourhood VARCHAR(120),
+room_type VARCHAR(120),
+last_review date NULL,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE tableFact  (
+id bigINT NOT NULL,
+host_id bigINT, 
+latitude FLOAT,
+longitude FLOAT,
+reviews_per_month FLOAT NULL,
+calculated_host_listings_count bigINT,
+availability_365 bigINT,
+PRIMARY KEY (id, host_id),
+FOREIGN KEY (id) references dimHousing(id),
+FOREIGN KEY (id, host_id) references dimHost(id, host_id)
+);
+
+
+
+-- ©2021 Derechos reservados: Ninguna parte de esta obra puede ser reproducida o transmitida, 
+-- mediante ningún sistema o método, electrónico o mecánico, sin conocimiento por escrito de los autores.
