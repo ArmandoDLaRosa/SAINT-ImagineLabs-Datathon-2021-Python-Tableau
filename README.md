@@ -80,7 +80,7 @@
 5) Then, import the data to table tableFact
 
 ## DashBoard
-[File for Tableau Dashboard](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Dashboard/Dashboard%20-%20Performance%20Metrics%20in%20NYC.png)
+[File for Tableau Dashboard](https://github.com/ArmandoDLaRosa/SAINT-ImagineLabs-Datathon-2021-Python-Tableau/blob/main/Dashboard/PerformanceMetricsNYC.twb)
 1) Identify all the objects and their function.
 2) Import the DB to Tableau
 3) Design different metrics that are relevant to the data analysis. 
